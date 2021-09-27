@@ -1,0 +1,178 @@
+
+
+#sitetitle {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  font-size: 50px;
+}
+
+h2, h3, h4 {
+  font-family: 'Montserrat' sans-serif;
+}
+
+* {
+  font-family: 'Merriweather', serif;
+  box-sizing: border-box;
+}
+
+#subsitetitle {
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  font-size: 10px;
+  padding: 20px;
+  background-color: #990000;
+  color: white;
+}
+
+img {
+  width: 80%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*
+img.mindmap {
+  width: 40%;
+}
+*/
+
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+
+.navbar {
+  background-color: #990000;
+  overflow: hidden;
+}
+
+.navbar a{
+  float: left;
+  display: block;
+  color: white;
+  text-align:center;
+  padding: 15px 20px;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  background-color: #B30000;
+}
+
+.problem {
+
+}
+
+.reflect {
+  font-style: italic;
+  margin-left: 5%;
+  margin-right: 5%;
+  background-color: #FFE6E6;
+}
+
+/* table formatting*/
+
+table {
+  border: 3px solid #000000;
+  width: 100%;
+  text-align: left;
+  border-collapse: collapse;
+}
+table td, table th {
+  border: 1px solid #000000;
+  padding: 5px 4px;
+}
+table tbody td {
+  font-size: 13px;
+}
+table thead {
+  background: #CFCFCF;
+  background: -moz-linear-gradient(top, #dbdbdb 0%, #d3d3d3 66%, #CFCFCF 100%);
+  background: -webkit-linear-gradient(top, #dbdbdb 0%, #d3d3d3 66%, #CFCFCF 100%);
+  background: linear-gradient(to bottom, #dbdbdb 0%, #d3d3d3 66%, #CFCFCF 100%);
+  border-bottom: 3px solid #000000;
+}
+table thead th {
+  font-size: 15px;
+  font-weight: bold;
+  color: #000000;
+  text-align: left;
+}
+
+/*table formatting end. image gallery formatting start*/
+
+.container {
+  position: relative;
+}
+
+.mySlides {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.next{
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.numbertext {
+  color: #000000;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.caption-container {
+  text-align: center;
+  background-color: #990000;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 20%;
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+/*image gallery formatting end.*/
