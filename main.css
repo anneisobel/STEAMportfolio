@@ -224,7 +224,7 @@ table thead th {
 }
 
 .column3 {
-  display: 33.33%;
+  width: 33.33%;
   padding: 5px;
 }
 
@@ -235,6 +235,6 @@ table thead th {
 }
 
 .column2 {
-  display: 50%;
+  width: 50%;
   padding: 5px;
 }
