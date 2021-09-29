@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Montserrat&display=swap" rel="stylesheet">
+  <script src="myscripts.js"></script>
 </head>
 
 <style>
@@ -204,11 +205,55 @@
       Before the workshop even began, as part of the registraton for the workshop, students filled out a survey, answering a few questions about themselves and what they know about engineering so far. This was the first formative assessment, serving
       as a short pre-assessment on the students' prior knowledge and expectations related to engineering.
     </p>
-    <img src="Media/introtoeng/sign up 1.png" alt="Students' answers to 'What are your hobbies?' on the sign-up survey">
-    <img src="Media/introtoeng/sign up 2.png" alt="Students' answers to 'What are your favorite subjects in school?' on the sign-up survey">
-    <img src="Media/introtoeng/sign up 3.png" alt="Students' answers to 'What do you think engineering is?' on the sign-up survey">
-    <img src="Media/introtoeng/sign up 4.png" alt="Students' answers to 'Do you think engineering and art work together?' on the sign-up survey">
-    <img src="Media/introtoeng/sign up 5.png" alt="Students' answers to 'What do you want to learn?' on the sign-up survey">
+
+    <div class="container">
+      <div class="mySlides">
+        <div class="numbertext">1/5</div>
+        <img src="Media/introtoeng/sign up 1.png" style="width:100%" />
+      </div>
+      <div class="mySlides">
+        <div class="numbertext">2/5</div>
+        <img src="Media/introtoeng/sign up 2.png" style="width:100%" />
+      </div>
+      <div class="mySlides">
+        <div class="numbertext">3/5</div>
+        <img src="Media/introtoeng/sign up 3.png" style="width:100%" />
+      </div>
+      <div class="mySlides">
+        <div class="numbertext">4/5</div>
+        <img src="Media/introtoeng/sign up 4.png" style="width:100%" />
+      </div>
+      <div class="mySlides">
+        <div class="numbertext">5/5</div>
+        <img src="Media/introtoeng/sign up 5.png" style="width:100%" />
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+
+      <div class="row">
+        <div class="column">
+          <img class="demo cursor" src="Media/introtoeng/sign up 1.png" style="width:100%" onclick="currentSlide(1)" alt="What are your hobbies?">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="Media/introtoeng/sign up 2.png" style="width:100%" onclick="currentSlide(2)" alt="What are your favorite subjects in school?">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="Media/introtoeng/sign up 3.png" style="width:100%" onclick="currentSlide(3)" alt="What do you think engineering is?">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="Media/introtoeng/sign up 4.png" style="width:100%" onclick="currentSlide(4)" alt="Do you think engineering and art work together?">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="Media/introtoeng/sign up 5.png" style="width:100%" onclick="currentSlide(5)" alt="What do you want to learn?">
+        </div>
+      </div>
+
+    </div>
     <div>
       <h3>Session 1</h3>
       <div class="reflect">
@@ -318,6 +363,8 @@
           I think the first session went well, with the exception of the Miro chaos. I pushed past it and continued on without acknowledging the chaos, but it was really something. Looking back on it, it's actually really funny, especially since my
           dad had warned me of what they might do. I just hadn't realized how it would apply to Miro. I probably won't use Miro again in this workshop.
           <br><br>
+          Thankfully, there were few technological issues. One student's mic wasn't working, but we worked around it by having him type his contributions and responses in the chat to share. I read his message aloud so that everyone would hear.
+          <br><br>
           The students didn't engage too much. I suspect it was due to the unfamiliarity with me and the workshop. I'm also unsure how many students chose to sign up and how many students were pushed to join by their parents. However, they all
           responded and engaged when called on by name. Next time, I'll jump directly to calling on students by name. Most of the sharing portions of this workshop will require all of them to share a little bit.
           <br><br>A's presentation was very informative, but I think the vocabulary might've been too advanced for the students' level. They didn't ask any questions pertaining to the engineering details of the presentation, so I'm not sure how much
@@ -327,26 +374,90 @@
           <br><br>Next time, we have an engineer from Boeing joining the class. At the end of class, I asked if the students had ever heard of Boeing and they haven't, so we'll have to explain what Boeing is then.
           <br><br>I did not have the students fill out a reflection at the end of the class. I wasn't sure whether we would have time at the end or not (we ended right on time), but a reflection would've been very helpful. I will be sure to include
           one in the next session.
+          <br><br>Unbeknownst to me, my mom had been listening in on the class and enjoying it greatly. After the class, she and my dad suggested that I use a project I had completed earlier this year as an example of my own utilization of the
+          engineering design process. I hadn't even thought of this at all, intending to use other examples like the spoon. However, this is really a great idea to include as my own journey through the engineering design process.
         </p>
       </div>
     </div>
 
     <div>
       <h3>Session 2</h3>
-
+      <p>
+        To start the session, I showed the students some pictures of life in Japan to give them a chance to get to know me better. After that, we went over the planned activities for the day and reviewed what we learned about in the last session. I
+        asked questions pulled directly from the last session and students volunteered answers.
+        <br><br>After reminding students what engineering is and to think like engineers, we welcomed the guest engineer for the day, B, a software engineer at Boeing. B introduced himself and talked about his own journey into the world of
+        engineering. He explained about Boeing and the work that goes into preparing airplanes and pilots for flight. He showed them what a flight simulation looked like and explained how they use flight simulations. The students seemed quite
+        interested, although the only question asked was in regard to B's cats.
+      </p>
+      <p>
+        Following B's presentation, we returned to the engineering design process. We reviewed the step we learned last session: identify the problem. This time, I introduced my own problem that I had tackled using the engineering design problem a
+        few months ago. My problem was finding a way to set up a projector in my new apartment's living room with only one empty wall, a doorway, and being unable to attach things to the walls. I showed them illustrations of my project and defined my
+        project using the same three questions they had answered.
+      </p>
+      <img src="Media/introtoeng/projector problem.gif" alt="Illustration of living room and desired projector set up" />
+      <p>
+        Having reviewed the first step in the engineering design process, we moved to the next step: brainstorm solutions. After introducing them to the step and what brainstorming consists of, I applied the step to my own example and showed them my
+        own brainstorming.
+      </p>
+      <img src="Media/introtoeng/brainstorm ex.png" alt="Projector set up brainstorming" />
+      <p>
+        Working with the problems they had identified during the last sesion, students then took about 15 minutes to brainstorm. They researched online to see if there were other solutions to their problem or similar problems and took notes and/or
+        drew pictures. They were also encouraged to think of or look at solutions that might not be so practical. When the students returned, they shared
+        their brainstorming and told us about some of the ideas they'd thought of or researched.
+        <br><br>
+        The next step is to select a design. Following the same format as with the previous step, we reviewed the questions engineers might ask when selecting a design and I applied them to my own example. I walked the students through my own thought
+        process and selection process, until I reached the one design that I thought might work. I then showed them how I thought to modify the design I had chosen.
+      </p>
+      <div class="row2a">
+        <div class="column2a">
+          <img src="Media/introtoeng/select ex 1.png" alt="Miro workspace" style=width:100%>
+        </div>
+        <div class="column2b">
+          <img src="Media/introtoeng/select ex 2.png" alt="Miro workspace zoomed out" style=width:100%>
+        </div>
+      </div>
+      <p>
+        Students were given five minutes to consider their brainstormed ideas and select a design. They then shared their selected design with the class. This is the design they would continue to build on in the next session. During the sharing
+        session, a couple of the students made suggestions for each other and responded to each other's suggestions as well.
+      </p>
+      <p>
+        Finally, we previewed the next session's planned activities and the students filled out the daily reflection through Google Forms.
+      </p>
+      <div class="row3">
+        <div class="column3">
+          <img src="Media/introtoeng/Sep 17 reflect 1.png" alt="Sept. 17 Daily Reflection Pt. 1" style=width:100%>
+        </div>
+        <div class="column3">
+          <img src="Media/introtoeng/Sep 17 reflect 2.png" alt="Sept. 17 Daily Reflection Pt. 2" style=width:100%>
+        </div>
+        <div class="column3">
+          <img src="Media/introtoeng/Sep 17 reflect 3.png" alt="Sept. 17 Daily Reflection Pt. 3" style=width:100%>
+        </div>
+      </div>
+      <br>
       <div class="STEAMelement">
         <h4>STEAM Elements: Session 2</h4>
         <p>
-          <strong>Science:</strong>
-          <br><br><strong>Technology:</strong>
-          <br><br><strong>Engineering:</strong>
-          <br><br><strong>Arts:</strong>
-          <br><br><strong>Mathematics:</strong>
+          <strong>Science:</strong> As students shared and disussed their selected designs, there was some discussion on types of materials that could be used based on their properties. The discussion of material properties connected us to chemistry.
+          <br><br><strong>Technology:</strong> Students used their own devices and the Internet as they brainstormed possible solutions to their problems. Google Forms was also used for the daily reflection.
+          <br><br><strong>Engineering:</strong> Students continued to practice thinking like engineers and viewing the world through engineers' eyes. They practiced approaching their problem and potential solutions as engineers would.
+          <br><br><strong>Arts:</strong> Thoughout the brainstorming and design selection processes, students could express themselves by taking notes or drawing as they wished. They also practiced their communication skills as they shared their
+          brainstorming and selected designs.
         </p>
       </div>
       <br>
       <div class="reflect">
         <h4>Reflection: Session 2</h4>
+        <p>
+          I was less nervous with the second session, as compared to before the first session. I felt that the lesson flowed more smoothly this time, despite continuing technical difficulties and students in various locations. The student whose mic
+          wasn't working was still unable to fix the problem, so we did as before and had him respond in the chat. Other students switched locations during the session and had to exit and re-enter the Zoom, but it didn't lead to any issues.
+          <br><br>We did not attempt Miro again. Instead, all of our sharing and discussion was verbal only.
+          <br><br>I think that the students were more interested, or at least better understood, this time's guest engineer presentation better than the first time. I took more time this time to help prepare my guest engineer before the session,
+          going through his PowerPoint and vocabulary. B also has had some experience teaching kids before, so that helped. The focus of the engineering was probably something the students could connect with better, as they've all likely at least
+          seen airplanes before even if they haven't flown before. However, the students may not have any familiarity with medical implants of any type.
+          <br><br>The students were more engaged throughout this session. They answered questions without needing to be called on, asked questions of their own, and talked to each other during the discussions as well.
+          <br><br>I'm quite pleased with their progress through the engineering design process. Next time's session might be a little tricky, as we won't be able to actually physically build their solutions.
+        </p>
       </div>
     </div>
 
@@ -393,7 +504,7 @@
     </div>
 
     <a class="button" href="finalreflect.html">
-      Read my final reflection on the entire teaching experience next.
+      Read my final reflection on the entire teaching experience next. >>>
     </a>
 </body>
 
